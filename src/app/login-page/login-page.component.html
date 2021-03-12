@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="content-container">
+
+        <h3>Log In</h3>
+        <form [formGroup] = "loginForm">
+            <div class="textbox">
+                <input formControlName="email"  type="email" placeholder="Email" />
+            </div>
+
+            <div class="textbox">
+                <input formControlName="password" type="password" placeholder="Password" />
+            </div>
+
+                <button class="btn" type="button" name=""  (click)="logIn()" [disabled]="!loginForm.valid">Log In</button>
+
+                <p>Don't have an account? Click <a [routerLink]="'/register'">here</a> to register.</p>
+        </form>
+    </div>
+</div>

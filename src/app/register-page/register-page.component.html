@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="content-container">
+        <h2>Register</h2>
+
+        <form [formGroup]="registerForm" class="form-container">
+
+            <input formControlName="fname" placeholder="First name"/>
+           
+            <input formControlName="lname" placeholder="Last name" />
+            
+            <input formControlName="email" placeholder= "Email"/>
+            
+            <input formControlName="password" type="password" placeholder="Password"/>
+
+        </form>
+
+        <button class="btn" type="button" name=""  (click)="register()" [disabled]="!registerForm.valid">Register</button>
+
+
+        <p>Already registered? Click <a [routerLink]="'/'">here</a> to log in.</p>
+
+    </div>
+</div>

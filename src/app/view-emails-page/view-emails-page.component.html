@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="content-container">
+
+        <h1>Hello World!</h1>
+        <h3>You Got Mail!</h3>
+
+        <div *ngFor = "let email of emails">{{email.id}} {{email.subject}} {{email.sentFrom}} {{email.sentTo}} {{email.timeStamp}}</div>
+        <br>
+        <button class="btn" type="button" name="" (click)="signOut()">Sign Out</button>
+
+    </div>
+</div>
+
